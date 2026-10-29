@@ -56,12 +56,7 @@
         Hoy lo recordamos por su fe, su vocación y su pertenencia
         a las Escuelas Pías.
     </p>
-
-    <p>
-        <a href="#obras">Conocer sus obras y servicios</a>
-        |
-        <a href="#legado">Descubrir su legado</a>
-    </p>
+    
 </section>
 
     <section id="obras">
@@ -244,100 +239,98 @@
     </section>
 
     <section id="quiz">
-        <h2>Quiz</h2>
+    <h2>Actividad 1: ¡Poné a prueba tus conocimientos!</h2>
+    <p>Respondé las siguientes preguntas sobre Matías Cardona Meseguer.</p>
 
-        <p>
-            Poné a prueba tus conocimientos sobre el Beato Matías Cardona.
-        </p>
+    <div class="pregunta">
+        <p>1. ¿En qué año nació Matías Cardona Meseguer?</p>
+        <select id="p1">
+            <option value="">Elegí una respuesta</option>
+            <option value="1902">1902</option>
+            <option value="1914">1914</option>
+            <option value="1936">1936</option>
+        </select>
+    </div>
 
-        <form>
-            <fieldset>
-                <legend>1. ¿Dónde nació Matías Cardona?</legend>
+    <div class="pregunta">
+        <p>2. ¿A qué orden religiosa pertenecía?</p>
+        <select id="p2">
+            <option value="">Elegí una respuesta</option>
+            <option value="jesuita">Jesuita</option>
+            <option value="escolapio">Escolapio</option>
+            <option value="franciscano">Franciscano</option>
+        </select>
+    </div>
 
-                <label>
-                    <input type="radio" name="pregunta1" value="a">
-                    Vallibona, Castellón
-                </label>
-                <br>
+    <div class="pregunta">
+        <p>3. ¿Por qué se lo recuerda como mártir?</p>
+        <select id="p3">
+            <option value="">Elegí una respuesta</option>
+            <option value="martir">Por morir durante la persecución religiosa</option>
+            <option value="maestro">Por fundar una escuela</option>
+            <option value="viajero">Por realizar viajes</option>
+        </select>
+    </div>
 
-                <label>
-                    <input type="radio" name="pregunta1" value="b">
-                    Barcelona
-                </label>
-                <br>
+    <div class="pregunta">
+        <p>4. ¿En qué año fue beatificado?</p>
+        <select id="p4">
+            <option value="">Elegí una respuesta</option>
+            <option value="1936">1936</option>
+            <option value="1995">1995</option>
+            <option value="2000">2000</option>
+        </select>
+    </div>
 
-                <label>
-                    <input type="radio" name="pregunta1" value="c">
-                    Madrid
-                </label>
-            </fieldset>
+    <button onclick="corregirCuestionario()">
+        Comprobar respuestas
+    </button>
 
-            <fieldset>
-                <legend>2. ¿A qué orden religiosa perteneció?</legend>
+    <p id="resultado"></p>
+</section>
 
-                <label>
-                    <input type="radio" name="pregunta2" value="a">
-                    Los Jesuitas
-                </label>
-                <br>
 
-                <label>
-                    <input type="radio" name="pregunta2" value="b">
-                    Las Escuelas Pías
-                </label>
-                <br>
+<!-- ACTIVIDAD 2: LÍNEA DE TIEMPO -->
+<section id="actividad">
+    <h2>Actividad 2: Completá la línea de tiempo</h2>
+    <p>Elegí el año correspondiente a cada acontecimiento de su vida.</p>
 
-                <label>
-                    <input type="radio" name="pregunta2" value="c">
-                    Los Franciscanos
-                </label>
-            </fieldset>
+    <div class="pregunta">
+        <p>1. Nació en Vallibona, España:</p>
+        <select id="a1">
+            <option value="">Elegí el año</option>
+            <option value="1902">1902</option>
+            <option value="1936">1936</option>
+            <option value="1995">1995</option>
+        </select>
+    </div>
 
-            <fieldset>
-                <legend>3. ¿En qué año fue ordenado sacerdote?</legend>
+    <div class="pregunta">
+        <p>2. Murió durante la persecución religiosa:</p>
+        <select id="a2">
+            <option value="">Elegí el año</option>
+            <option value="1902">1902</option>
+            <option value="1936">1936</option>
+            <option value="1995">1995</option>
+        </select>
+    </div>
 
-                <label>
-                    <input type="radio" name="pregunta3" value="a">
-                    1929
-                </label>
-                <br>
+    <div class="pregunta">
+        <p>3. Fue beatificado por el papa Juan Pablo II:</p>
+        <select id="a3">
+            <option value="">Elegí el año</option>
+            <option value="1902">1902</option>
+            <option value="1936">1936</option>
+            <option value="1995">1995</option>
+        </select>
+    </div>
 
-                <label>
-                    <input type="radio" name="pregunta3" value="b">
-                    1936
-                </label>
-                <br>
+    <button onclick="comprobarLineaTiempo()">
+        Comprobar actividad
+    </button>
 
-                <label>
-                    <input type="radio" name="pregunta3" value="c">
-                    1995
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend>4. ¿Quién lo beatificó?</legend>
-
-                <label>
-                    <input type="radio" name="pregunta4" value="a">
-                    El papa Juan Pablo II
-                </label>
-                <br>
-
-                <label>
-                    <input type="radio" name="pregunta4" value="b">
-                    El papa Francisco
-                </label>
-                <br>
-
-                <label>
-                    <input type="radio" name="pregunta4" value="c">
-                    El papa Benedicto XVI
-                </label>
-            </fieldset>
-
-            <button type="button">Enviar respuestas</button>
-        </form>
-    </section>
+    <p id="resultadoActividad"></p>
+</section>
 
     <section id="fuentes">
         <h2>Fuentes consultadas</h2>
